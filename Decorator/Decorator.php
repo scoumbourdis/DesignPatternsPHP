@@ -14,7 +14,7 @@ namespace DesignPatterns;
  *   course)
  *
  */
- 
+
 interface Renderer
 {
     public function renderData();
@@ -38,7 +38,7 @@ class Webservice implements Renderer
 abstract class Decorator
 {
     protected $_wrapped;
-    
+
     public function __construct($wrappable)
     {
         $this->_wrapped = $wrappable;
